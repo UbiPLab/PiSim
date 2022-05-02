@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/malicious_idCar_name"
+        android:layout_width="wrap_content"
+        android:text="@string/prompt_IdCar_malicious"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/malicious_idCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/malicious_idNumber_name"
+        android:text="@string/prompt_IdNumber_malicious"
+        android:layout_marginLeft="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/malicious_idNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
+</LinearLayout>

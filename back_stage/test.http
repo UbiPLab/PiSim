@@ -1,0 +1,139 @@
+#@url=http://localhost:3000/api
+@url=http://192.168.31.215:6699/
+@json=Content-Type: application/json
+
+
+
+### 
+post {{url}}/RSUInfo
+{{json}}
+
+{
+    "username":"111111",
+    "password":"111111",
+    "email":"106011846@qq.com"
+}
+
+
+### 
+post {{url}}/login
+{{json}}
+
+{
+    "username":"root",
+    "password":"root"
+}
+
+//部门主管token
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTExMSIsImlhdCI6MTU5MTQxMzI4NX0.QpuLUCL9-hcIQXRYeomj9PSDHCdU2yQzrJp88I0QKx0
+
+###
+POST {{url}}/TAMaliciousUserInfo
+{{json}}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJyb290Iiwic3ViIjoicm9vdCIsImlhdCI6MTU5NTkyOTUxMiwidXNlcm5hbWUiOiJyb290IiwiZXhwIjoxNTk1OTg5NTEyfQ.dklHZoUrMnPxxfURzOgffyDaUo_TblYRwlQX6P8VWaY"
+}
+
+###
+POST {{url}}/getProjectInfo
+{{json}}
+
+{
+    "projectName": "学习",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjAwMDAwMDAwIiwiaWF0IjoxNTkxMzQyNDgxfQ.BR8qmLRDUa16UAd79uFH7DdwmlFIZWm5tFibCc6hW1A"
+}
+
+###
+POST {{url}}/getTrainInfo
+{{json}}
+
+{
+    "workNumber": "1234567891",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTExMSIsImlhdCI6MTU5MTQxMzI4NX0.QpuLUCL9-hcIQXRYeomj9PSDHCdU2yQzrJp88I0QKx0"
+}
+
+###
+POST {{url}}/getAttendanceInfo
+{{json}}
+
+{
+    "workNumber": "1234567891",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTExMSIsImlhdCI6MTU5MTQxMzI4NX0.QpuLUCL9-hcIQXRYeomj9PSDHCdU2yQzrJp88I0QKx0"
+}
+
+###
+POST {{url}}/getSalaryChangeInfo
+{{json}}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTExMSIsImlhdCI6MTU5MTQxMzI4NX0.QpuLUCL9-hcIQXRYeomj9PSDHCdU2yQzrJp88I0QKx0"
+}
+
+###
+POST {{url}}/getTrainInfo
+{{json}}
+
+{
+    "workNumber": "1234567891",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTExMSIsImlhdCI6MTU5MTQxMzI4NX0.QpuLUCL9-hcIQXRYeomj9PSDHCdU2yQzrJp88I0QKx0"
+}
+
+###
+POST {{url}}/addProject
+{{json}}
+
+{
+    "projectName": "学习2",
+    "difficultLevel": 123,
+    "projectLeader": "1234567891",
+    "projectStart": "2020-6-20",
+    "projectEnd": "2020-6-30",
+    "projectContent": "数据库开发了",
+    "participants": "1234567891,1234567892,1234567892,1234567893,1234567894",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTExMSIsImlhdCI6MTU5MTQxMzI4NX0.QpuLUCL9-hcIQXRYeomj9PSDHCdU2yQzrJp88I0QKx0"
+}
+
+###
+POST {{url}}/getProjectEmployeesInfo
+{{json}}
+
+{
+    "projectId": 11,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjExMTExMSIsImlhdCI6MTU5MTQxMzI4NX0.QpuLUCL9-hcIQXRYeomj9PSDHCdU2yQzrJp88I0QKx0"
+}
+
+###
+POST {{url}}/deleteProject
+{{json}}
+
+{
+   "projectId": 10,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjAwMDAwMDAwIiwiaWF0IjoxNTkxMzQyNDgxfQ.BR8qmLRDUa16UAd79uFH7DdwmlFIZWm5tFibCc6hW1A"
+}
+
+###
+POST {{url}}/getAccessInfo
+{{json}}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjAwMDAwMDAwIiwiaWF0IjoxNTkxMzQyNDgxfQ.BR8qmLRDUa16UAd79uFH7DdwmlFIZWm5tFibCc6hW1A"
+}
+
+###
+POST {{url}}/getRoleInfo
+{{json}}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjAwMDAwMDAwIiwiaWF0IjoxNTkxMzQyNDgxfQ.BR8qmLRDUa16UAd79uFH7DdwmlFIZWm5tFibCc6hW1A"
+}
+
+###
+POST {{url}}/updateAccess
+{{json}}
+
+{
+    "role_id": 0,
+    "username": 123,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjAwMDAwMDAwIiwiaWF0IjoxNTkxMzQyNDgxfQ.BR8qmLRDUa16UAd79uFH7DdwmlFIZWm5tFibCc6hW1A"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/id_cat_malicious"
+        android:title="@string/malicious" />
+    <item
+        android:id="@+id/id_to_offLineMap"
+        android:title="@string/offLineMap"/>
+    <item
+        android:id="@+id/id_getPath_gaoDe"
+        android:title="@string/gaode_API"/>
+    <item
+        android:id="@+id/id_getPath"
+        android:title="@string/plan_route"/>
+<!--    <item-->
+<!--        android:id="@+id/id_getHistoryPath"-->
+<!--        android:title="@string/plan_route"/>-->
+
+</menu>

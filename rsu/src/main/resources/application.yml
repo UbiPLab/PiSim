@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.114.62.61:3306/rsu_ldb?serverTimezone=UTC
+    username: "root"
+    password: "cuikai2020"
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      max-lifetime: 1200000
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/ta?serverTimezone=UTC
+#    username: "root"
+#    password: "@-Sq12194"

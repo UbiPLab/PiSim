@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_background">
+
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinner_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+
+    <Button
+        android:id="@+id/submit_report"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_white_circle"
+        android:gravity="center"
+        android:text="@string/submit_report"
+        android:textColor="@color/map_text_color"
+        android:textSize="@dimen/font_32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/paint_line"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/map"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_white_circle"
+        android:gravity="center"
+        android:text="@string/get_road_conditions"
+        android:textColor="@color/map_text_color"
+        android:textSize="@dimen/font_32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/submit_report"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/get_refresh"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_white_circle"
+        android:gravity="center"
+        android:text="@string/refresh"
+        android:textColor="@color/map_text_color"
+        android:textSize="@dimen/font_32"
+        app:layout_constraintBottom_toTopOf="@+id/submit_report"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
